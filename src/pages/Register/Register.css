@@ -1,0 +1,202 @@
+/* src/pages/Register/Register.css - Final Proper & Professional */
+
+.register-page {
+  min-height: 100vh;
+  background: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+.register-card {
+  background: white;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.register-card h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1877f2;
+  margin-bottom: 0.5rem;
+}
+
+.register-card h2 {
+  font-size: 1.9rem;
+  color: #1c1e21;
+  margin-bottom: 0.5rem;
+}
+
+.register-card p {
+  font-size: 1.15rem;
+  color: #606770;
+  margin-bottom: 2rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.name-row,
+.dob-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.name-row input,
+.dob-row select {
+  flex: 1;
+}
+
+.gender-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0.8rem 0;
+}
+
+.gender-row label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid #dddfe2;
+  border-radius: 8px;
+  background: #f5f6f8;
+  font-size: 1.05rem;
+  color: #1c1e21;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gender-row label input {
+  margin-right: 0.8rem;
+}
+
+.gender-row label:hover {
+  background: #ebedf0;
+  border-color: #1877f2;
+}
+
+.gender-row input[type="radio"]:checked + span,
+.gender-row label:has(input:checked) {
+  background: #1877f2;
+  color: white;
+  border-color: #1877f2;
+}
+
+.register-form input,
+.register-form select {
+  padding: 1rem 1.2rem;
+  border: 1px solid #dddfe2;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  width: 100%;
+  background: white;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 0 4px rgba(24, 119, 242, 0.1);
+}
+
+/* PROPER TERMS CHECKBOX - Fixed, spaced, and professional */
+.terms-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1.8rem 0 1.2rem 0;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #1c1e21;
+  line-height: 1.6;
+}
+
+.terms-checkbox input[type="checkbox"] {
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.terms-checkbox label {
+  cursor: pointer;
+  flex: 1;
+}
+
+.terms-checkbox a {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.terms-checkbox a:hover {
+  text-decoration: underline;
+}
+
+.register-btn {
+  background: #42b72a;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.register-btn:hover {
+  background: #36a420;
+}
+
+.register-btn:disabled {
+  background: #a0dfa0;
+  cursor: not-allowed;
+}
+
+.register-footer {
+  margin-top: 2rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid #dddfe2;
+}
+
+.register-footer a {
+  color: #1877f2;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 2.5rem 2rem;
+  }
+  .name-row,
+  .dob-row,
+  .gender-row {
+    flex-direction: column;
+  }
+  .gender-row label {
+    justify-content: flex-start;
+    padding-left: 2.5rem;
+  }
+}

@@ -1,0 +1,59 @@
+.header {
+  height: 100vh;
+  min-height: 650px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../../assets/hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #1e293b;
+}
+
+.header-content {
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
+.header-content h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  color: #1e40af;
+}
+
+.header-content p {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  color: #475569;
+}
+
+.header-btn {
+  background: #2563eb;
+  color: white;
+  padding: 1.2rem 3rem;
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+.header-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
+}
+
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 3.5rem;
+  }
+  .header-content p {
+    font-size: 1.3rem;
+  }
+}

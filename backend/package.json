@@ -1,0 +1,20 @@
+{
+  "name": "harry-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "npx kill-port 5000 --force && node server.js",
+    "dev": "npx kill-port 5000 --force && nodemon server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.89.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.19.2",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "kill-port": "^2.0.1",
+    "nodemon": "^3.1.4"
+  }
+}

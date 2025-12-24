@@ -1,0 +1,38 @@
+Supabase Blog System Mind Map
+
+Root: Supabase Schema
+├── auth.users (built-in)
+│   └── id (UUID PK)
+├── profiles
+│   ├── id (UUID PK, FK → auth.users.id)
+│   ├── full_name
+│   ├── avatar_url
+│   ├── bio
+│   └── timestamps
+│   └── RLS: own only
+│   └── Trigger: auto-create on signup
+├── posts
+│   ├── id (UUID PK)
+│   ├── user_id (FK → profiles.id)
+│   ├── title
+│   ├── slug (unique)
+│   ├── content
+│   ├── image_url
+│   ├── published (bool)
+│   └── timestamps
+│   └── RLS: public read published, owner manage
+├── comments (optional)
+│   ├── id
+│   ├── post_id (FK → posts)
+│   ├── user_id (FK → profiles)
+│   ├── content
+│   └── RLS: on published posts
+├── likes (optional)
+│   ├── post_id + user_id unique
+│   └── RLS: on published posts
+└── dashboard_stats (VIEW)
+    ├── user_id
+    ├── total_posts
+    ├── published_posts
+    ├── comments_received
+    └── likes_received

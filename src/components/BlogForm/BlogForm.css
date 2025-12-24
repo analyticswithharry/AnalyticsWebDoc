@@ -1,0 +1,24 @@
+/* Form Actions - Button Group */
+.form-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-actions button {
+  min-width: 180px;
+}
+
+/* Cancel Button Style */
+.cancel-btn {
+  background: #64748b !important;
+  box-shadow: 0 4px 15px rgba(100, 116, 139, 0.2) !important;
+}
+
+.cancel-btn:hover {
+  background: #475569 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(100, 116, 139, 0.3) !important;
+}

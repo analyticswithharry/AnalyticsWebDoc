@@ -1,0 +1,75 @@
+/* src/pages/Blog/Blog.css */
+.blog-page {
+  padding: 8rem 0 6rem;
+  min-height: 100vh;
+  background-color: #f9fafb; /* Soft light background for premium feel */
+}
+
+.blog-title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 5rem;
+  letter-spacing: -0.8px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 3.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* True 4-column layout on large screens */
+@media (min-width: 1440px) {
+  .blog-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 3 columns on medium-large screens */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 2 columns on tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* 1 column on mobile */
+@media (max-width: 767px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .blog-title {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .blog-page {
+    padding: 6rem 0 4rem;
+  }
+}
+
+/* Loading and empty states */
+.loading-text,
+.no-posts {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #64748b;
+  padding: 6rem 0;
+}

@@ -1,0 +1,44 @@
+harry-landing-page/                 ← Project root
+├── public/                         ← Static assets
+│   ├── favicon.ico
+│   ├── manifest.json
+│   └── robots.txt
+├── src/                            ← React frontend
+│   ├── assets/
+│   │   ├── logo.png
+│   │   └── hero-bg.jpg
+│   ├── components/
+│   │   ├── Header/ (Header.jsx + Header.css)
+│   │   ├── Footer/ (Footer.jsx + Footer.css)
+│   │   ├── Navbar/ (Navbar.jsx + Navbar.css)
+│   │   ├── ProtectedRoute/ (ProtectedRoute.jsx + ProtectedRoute.css)
+│   │   ├── BlogCard/ (BlogCard.jsx + BlogCard.css)
+│   │   └── BlogForm/ (BlogForm.jsx + BlogForm.css)
+│   ├── pages/
+│   │   ├── Home/ (Home.jsx + Home.css)
+│   │   ├── Services/ (Services.jsx + Services.css)
+│   │   ├── Blog/ (Blog.jsx + Blog.css)
+│   │   ├── BlogDetail/ (BlogDetail.jsx + BlogDetail.css)
+│   │   ├── AboutUs/ (AboutUs.jsx + AboutUs.css)
+│   │   ├── Login/ (Login.jsx + Login.css)
+│   │   ├── Register/ (Register.jsx + Register.css)
+│   │   └── Dashboard/ (Dashboard.jsx + Dashboard.css)
+│   ├── context/
+│   │   └── AuthContext.jsx
+│   ├── services/
+│   │   ├── firebase.js
+│   │   └── api.js
+│   ├── utils/
+│   │   └── formatDate.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx                    ← Entry point
+│   └── index.css
+├── backend/                        ← Node.js backend
+│   ├── server.js
+│   └── package.json
+├── index.html                      ← Root (required by Vite)
+├── package.json                    ← Frontend
+├── vite.config.js
+├── README.md
+└── sandbox.config.json
